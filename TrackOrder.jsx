@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import { useOrders } from '../context/OrderContext';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import { useOrders } from './context/OrderContext';
 import { Search, Package, Truck, CheckCircle, Clock, MapPin, ChevronRight } from 'lucide-react';
 
 const STATUS_STEPS = [

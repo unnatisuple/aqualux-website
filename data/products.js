@@ -342,7 +342,7 @@ export const PRODUCTS = [
       "IP Rating": "IP44",
       "Warranty": "2 Years",
     },
-    features: ["LED illumination", "Anti-fog", "Touch dimmer", "Soft-close door", "IP44 rated"],
+    features: ["LED illumination", "Anti-fog", "Touch dimmer", "Soft-close door"],
     isBestSeller: false,
     isFeatured: false,
     reviews: [

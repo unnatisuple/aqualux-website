@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { ShoppingCart, User, Menu, X, ChevronDown, LogOut, Package, Heart, Settings } from 'lucide-react';
-import { useCart } from '../context/CartContext';
-import { useAuth } from '../context/AuthContext';
+import { useCart } from './context/CartContext';
+import { useAuth } from './context/AuthContext';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);

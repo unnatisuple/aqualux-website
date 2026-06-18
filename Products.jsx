@@ -1,9 +1,9 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import ProductCard from '../components/ProductCard';
-import { useProducts } from '../context/ProductContext';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import ProductCard from './ProductCard';
+import { useProducts } from './context/ProductContext';
 import { SlidersHorizontal, X, ChevronDown, Search, Grid3X3, List } from 'lucide-react';
 
 const SORT_OPTIONS = [

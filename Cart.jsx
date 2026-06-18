@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import { useCart } from '../context/CartContext';
-import { useProducts } from '../context/ProductContext';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import { useCart } from './context/CartContext';
+import { useProducts } from './context/ProductContext';
 import { Trash2, Minus, Plus, Tag, ArrowRight, ShoppingBag, ChevronRight, X } from 'lucide-react';
 
 export default function Cart() {

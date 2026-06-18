@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Navigate } from 'react-router-dom';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import { useAuth } from '../context/AuthContext';
-import { useOrders } from '../context/OrderContext';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import { useAuth } from './context/AuthContext';
+import { useOrders } from './context/OrderContext';
 import { User, Package, MapPin, Lock, Edit3, Save, X, AlertCircle, ChevronDown, ChevronRight, Eye, EyeOff } from 'lucide-react';
 
 const TABS = [

@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import ProductCard from '../components/ProductCard';
-import { useProducts } from '../context/ProductContext';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import ProductCard from './ProductCard';
+import { useProducts } from './context/ProductContext';
 import { ShieldCheck, Truck, RefreshCw, Headphones, ChevronRight, Star, Droplets, Bath, Wind, Package, Wrench } from 'lucide-react';
 
 const CATEGORY_ICONS = {

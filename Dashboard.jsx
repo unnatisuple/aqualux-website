@@ -1,6 +1,6 @@
-import { useOrders } from '../context/OrderContext';
-import { useProducts } from '../context/ProductContext';
-import { useAuth } from '../context/AuthContext';
+import { useOrders } from './context/OrderContext';
+import { useProducts } from './context/ProductContext';
+import { useAuth } from './context/AuthContext';
 import { Link } from 'react-router-dom';
 import {
   TrendingUp, ShoppingBag, Package, Users, AlertTriangle, ArrowUp, ArrowDown

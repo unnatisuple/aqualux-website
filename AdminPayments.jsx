@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useOrders } from '../context/OrderContext';
+import { useOrders } from './context/OrderContext';
 import { Search, TrendingUp, CreditCard, Truck, DollarSign } from 'lucide-react';
 
 export default function AdminPayments() {

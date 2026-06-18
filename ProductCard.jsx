@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ShoppingCart, Star, Eye } from 'lucide-react';
-import { useCart } from '../context/CartContext';
+import { useCart } from './context/CartContext';
 
 function StarRating({ rating, size = 14 }) {
   return (

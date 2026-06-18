@@ -1,5 +1,5 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from './Navbar';
+import Footer from './Footer';
 import { Award, Users, Leaf, Heart, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 

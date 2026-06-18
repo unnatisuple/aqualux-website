@@ -7,30 +7,30 @@ import { ProductProvider } from './context/ProductContext';
 import { SettingsProvider } from './context/SettingsContext';
 
 // Customer Pages
-import Home from './pages/Home';
-import Products from './pages/Products';
-import ProductDetail from './pages/ProductDetail';
-import Cart from './pages/Cart';
-import Checkout from './pages/Checkout';
-import OrderSuccess from './pages/OrderSuccess';
-import TrackOrder from './pages/TrackOrder';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import Account from './pages/Account';
-import About from './pages/About';
-import Contact from './pages/Contact';
+import Home from './Home';
+import Products from './Products';
+import ProductDetail from './ProductDetail';
+import Cart from './Cart';
+import Checkout from './Checkout';
+import OrderSuccess from './OrderSuccess';
+import TrackOrder from './TrackOrder';
+import Login from './Login';
+import Register from './Register';
+import Account from './Account';
+import About from './About';
+import Contact from './Contact';
 
 // Admin Pages
-import AdminLogin from './admin/AdminLogin';
-import AdminLayout from './admin/AdminLayout';
-import Dashboard from './admin/Dashboard';
-import AdminProducts from './admin/AdminProducts';
-import AdminOrders from './admin/AdminOrders';
-import AdminCustomers from './admin/AdminCustomers';
-import AdminCategories from './admin/AdminCategories';
-import AdminPayments from './admin/AdminPayments';
-import AdminSettings from './admin/AdminSettings';
-import SetupGuide from './admin/SetupGuide';
+import AdminLogin from './AdminLogin';
+import AdminLayout from './AdminLayout';
+import Dashboard from './Dashboard';
+import AdminProducts from './AdminProducts';
+import AdminOrders from './AdminOrders';
+import AdminCustomers from './AdminCustomers';
+import AdminCategories from './AdminCategories';
+import AdminPayments from './AdminPayments';
+import AdminSettings from './AdminSettings';
+import SetupGuide from './SetupGuide';
 
 import { useAuth } from './context/AuthContext';
 

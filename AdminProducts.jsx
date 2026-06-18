@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useProducts } from '../context/ProductContext';
+import { useProducts } from './context/ProductContext';
 import { Plus, Edit2, Trash2, ToggleLeft, ToggleRight, Search, X, AlertCircle } from 'lucide-react';
 
 const CATEGORIES = ['Bathtubs', 'Showers', 'Toilets', 'Washbasins', 'Faucets', 'Accessories'];

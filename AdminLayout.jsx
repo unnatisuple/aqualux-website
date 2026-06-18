@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from './context/AuthContext';
 import {
   LayoutDashboard, Package, ShoppingBag, Users, Tag, Ticket,
   CreditCard, Settings, LogOut, Menu, X, Store, BookOpen, ChevronRight

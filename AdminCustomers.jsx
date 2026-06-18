@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useAuth } from '../context/AuthContext';
-import { useOrders } from '../context/OrderContext';
+import { useAuth } from './context/AuthContext';
+import { useOrders } from './context/OrderContext';
 import { Search, Eye, Ban, CheckCircle, X, Users } from 'lucide-react';
 
 function CustomerModal({ customer, orders, onClose }) {

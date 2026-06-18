@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useSettings } from '../context/SettingsContext';
+import { useSettings } from './context/SettingsContext';
 import { Save, Eye, EyeOff, Store, CreditCard, Truck, Info } from 'lucide-react';
 
 export default function AdminSettings() {

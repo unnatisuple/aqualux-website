@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useProducts } from '../context/ProductContext';
+import { useProducts } from './context/ProductContext';
 import { Plus, Edit2, Trash2, ToggleLeft, ToggleRight, X, Tag, Ticket } from 'lucide-react';
 
 // Categories Section
