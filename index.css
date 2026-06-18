@@ -1,0 +1,291 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #F8F6F2;
+    color: #0F2340;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F8F6F2;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #4ABFBF;
+    border-radius: 999px;
+  }
+
+  input, select, textarea {
+    outline: none;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-aqua text-white font-semibold px-6 py-3 rounded-xl hover:bg-aqua-600 transition-all duration-200 shadow-md hover:shadow-aqua-glow active:scale-95 inline-flex items-center gap-2;
+  }
+
+  .btn-secondary {
+    @apply bg-navy text-white font-semibold px-6 py-3 rounded-xl hover:bg-navy-600 transition-all duration-200 shadow-md active:scale-95 inline-flex items-center gap-2;
+  }
+
+  .btn-outline {
+    @apply border-2 border-aqua text-aqua font-semibold px-6 py-3 rounded-xl hover:bg-aqua hover:text-white transition-all duration-200 active:scale-95 inline-flex items-center gap-2;
+  }
+
+  .btn-ghost {
+    @apply text-navy font-medium px-4 py-2 rounded-lg hover:bg-navy/5 transition-all duration-150 inline-flex items-center gap-2;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-card hover:shadow-card-hover transition-all duration-300;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-200 rounded-xl bg-white text-navy placeholder-slate focus:border-aqua focus:ring-2 focus:ring-aqua/20 transition-all duration-200 text-sm;
+  }
+
+  .label {
+    @apply block text-sm font-medium text-navy mb-1.5;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-navy;
+  }
+
+  .section-subtitle {
+    @apply text-slate mt-3 text-lg;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-aqua {
+    @apply badge bg-aqua/10 text-aqua-700;
+  }
+
+  .badge-navy {
+    @apply badge bg-navy/10 text-navy;
+  }
+
+  .badge-green {
+    @apply badge bg-green-100 text-green-700;
+  }
+
+  .badge-red {
+    @apply badge bg-red-100 text-red-700;
+  }
+
+  .badge-yellow {
+    @apply badge bg-yellow-100 text-yellow-700;
+  }
+
+  .admin-card {
+    @apply bg-white rounded-2xl p-6 shadow-card;
+  }
+
+  .sidebar-link {
+    @apply flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-sm transition-all duration-200;
+  }
+
+  .sidebar-link-active {
+    @apply sidebar-link bg-aqua text-white shadow-md;
+  }
+
+  .sidebar-link-inactive {
+    @apply sidebar-link text-warm-300 hover:bg-white/10 hover:text-white;
+  }
+
+  .table-header {
+    @apply text-xs font-semibold text-slate uppercase tracking-wider bg-warm-100 px-4 py-3 text-left;
+  }
+
+  .table-cell {
+    @apply px-4 py-4 text-sm text-navy;
+  }
+
+  .page-hero {
+    @apply relative overflow-hidden bg-gradient-to-br from-navy via-navy-600 to-navy-800 text-white;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-aqua to-aqua-300 bg-clip-text text-transparent;
+  }
+
+  .glassmorphism {
+    backdrop-filter: blur(16px);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .glassmorphism-dark {
+    backdrop-filter: blur(16px);
+    background: rgba(15, 35, 64, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Custom range slider */
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  background: linear-gradient(to right, #4ABFBF var(--range-progress, 0%), #E5E7EB var(--range-progress, 0%));
+  border-radius: 999px;
+  outline: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4ABFBF;
+  cursor: pointer;
+  border: 3px solid white;
+  box-shadow: 0 2px 8px rgba(74, 191, 191, 0.4);
+  transition: all 0.2s;
+}
+
+input[type='range']::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 16px rgba(74, 191, 191, 0.6);
+}
+
+/* Star rating */
+.star-filled {
+  color: #F59E0B;
+}
+
+.star-empty {
+  color: #E5E7EB;
+}
+
+/* Checkmark animation */
+.checkmark-circle {
+  animation: bounceIn 0.6s cubic-bezier(0.36, 0.07, 0.19, 0.97) forwards;
+}
+
+.checkmark-path {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: checkmark 0.5s ease-out 0.4s forwards;
+}
+
+/* Page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Skeleton loading */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite;
+}
+
+@keyframes skeleton-loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Toast override */
+.toast-custom {
+  font-family: 'Inter', sans-serif !important;
+  border-radius: 12px !important;
+}
+
+/* Admin sidebar gradient */
+.admin-sidebar {
+  background: linear-gradient(180deg, #0F2340 0%, #0C1D35 100%);
+}
+
+/* Product image zoom */
+.product-img-container {
+  overflow: hidden;
+}
+
+.product-img-container img {
+  transition: transform 0.4s ease;
+}
+
+.product-img-container:hover img {
+  transform: scale(1.06);
+}
+
+/* Shimmer effect for hero */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg, #4ABFBF, #9FDFDF, #4ABFBF);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+/* Step indicator */
+.step-active {
+  @apply bg-aqua text-white;
+}
+
+.step-done {
+  @apply bg-green-500 text-white;
+}
+
+.step-pending {
+  @apply bg-gray-200 text-slate;
+}
+
+/* Order timeline */
+.timeline-dot-done {
+  @apply w-4 h-4 rounded-full bg-aqua border-2 border-aqua ring-4 ring-aqua/20;
+}
+
+.timeline-dot-current {
+  @apply w-4 h-4 rounded-full bg-aqua border-2 border-white ring-4 ring-aqua/40 animate-pulse;
+}
+
+.timeline-dot-pending {
+  @apply w-4 h-4 rounded-full bg-gray-200 border-2 border-gray-300;
+}
